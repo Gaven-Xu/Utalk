@@ -1,0 +1,55 @@
+{
+    "name": "utalk",
+    "version": "1.2.0",
+    "description": "a talk software powered by unnuo.Every can talk whithout regist.Just a e-mail is need",
+    "main": "./main.js",
+    "scripts": {
+        "test": "electron .",
+        "pack": "electron-packager ./ --icon=./img/favicon.ico --platform=win32 --arch=x64 --version=1.8.4 --overwrite --ignore=node_modules --ignore=.gitignore",
+        "build": "set ELECTRON_MIRROR=https://npm.taobao.org/mirrors/electron/&electron-builder -w"
+    },
+    "repository": {
+        "type": "git"
+    },
+    "keywords": [
+        "unnuo",
+        "utalk"
+    ],
+    "author": "Gaven",
+    "license": "ISC",
+    "devDependencies": {
+        "babel-preset-env": "^1.6.1",
+        "cheerio": "^0.22.0",
+        "del": "^2.2.2",
+        "electron": "^1.8.4",
+        "electron-packager": "^11.2.0",
+        "gulp": "^3.9.1",
+        "gulp-babel": "^6.1.2",
+        "gulp-cached": "^1.1.1",
+        "gulp-plumber": "^1.1.0",
+        "gulp-rename": "^1.2.2",
+        "gulp-sass": "^3.1.0",
+        "gulp-sourcemaps": "^2.6.0",
+        "gulp-uglify": "^2.1.2",
+        "request": "^2.81.0"
+    },
+    "dependencies": {
+        "socket.io-client": "^1.7.3",
+        "ws": "^2.3.1"
+    },
+    "build": {
+        "appId": "com.unnuo",
+        "copyright": "unnuo.com",
+        "productName": "Utalk",
+        "dmg": {
+            "background": "./img/timg3.jpg",
+            "window": {
+                "x": 200,
+                "y": 100
+            }
+        },
+        "win": {
+            "icon": "./img/icon.png"
+        }
+    }
+}
