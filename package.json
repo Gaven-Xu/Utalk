@@ -6,7 +6,7 @@
     "scripts": {
         "test": "electron .",
         "pack": "electron-packager ./ --icon=./img/favicon.ico --platform=win32 --arch=x64 --version=1.8.4 --overwrite --ignore=node_modules --ignore=.gitignore",
-        "build": "set ELECTRON_MIRROR=https://npm.taobao.org/mirrors/electron/&electron-builder -w"
+        "build": "set ELECTRON_MIRROR=https://npm.taobao.org/mirrors/electron/&electron-builder -l"
     },
     "repository": {
         "type": "git"
